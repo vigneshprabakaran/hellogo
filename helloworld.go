@@ -74,6 +74,12 @@ func main() {
 
 	fmt.Println("c is", c)
 
+	d := make([]interface{}, 5)
+
+	// copy values of c into d
+	copy(d, c)
+
+	fmt.Println(d)
 }
 
 // add is a function to add 2 numbers
