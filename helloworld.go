@@ -58,6 +58,22 @@ func main() {
 
 	fmt.Println(a[1])
 
+	//slices
+
+	// trying a slice of interface coz we can
+	var b = make([]interface{}, 5)
+
+	fmt.Println("slice b is ", b)
+
+	c := append(b, a[1])
+
+	c[0] = 1
+
+	c[2] = "Hello"
+	c[3] = true
+
+	fmt.Println("c is", c)
+
 }
 
 // add is a function to add 2 numbers
