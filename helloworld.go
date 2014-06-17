@@ -45,6 +45,19 @@ func main() {
 	// string interpolation - formatted printing
 	fmt.Printf(" Swapped x: Hello , y: World as x:%s  and y:%s ", x, y)
 
+	//arrays in GO
+	var a [10]int
+
+	fmt.Println(a)
+
+	a[1] = 100
+	fmt.Println(a)
+
+	//print the length of array a
+	fmt.Println(len(a))
+
+	fmt.Println(a[1])
+
 }
 
 // add is a function to add 2 numbers
