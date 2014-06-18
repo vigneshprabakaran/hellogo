@@ -79,7 +79,15 @@ func main() {
 	// copy values of c into d
 	copy(d, c)
 
+	// push new element into the slice . make it grow
+	d = append(d, 20)
+
+	// push an entire slice into another slice
+	e := append(d, c...)
+
 	fmt.Println(d)
+
+	fmt.Println(e)
 }
 
 // add is a function to add 2 numbers
