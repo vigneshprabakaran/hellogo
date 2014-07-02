@@ -45,6 +45,11 @@ func main() {
 	// string interpolation - formatted printing
 	fmt.Printf(" Swapped x: Hello , y: World as x:%s  and y:%s ", x, y)
 
+	//format a string n extract it into a local variable
+	s := fmt.Sprintf("Hello %s", "Vicky")
+
+	fmt.Println("Testing", s)
+
 	//arrays in GO
 	var a [10]int
 
